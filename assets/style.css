@@ -310,3 +310,52 @@ table th {
 .writing-link:hover {
   text-decoration: underline;
 }
+
+.writing-entry {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.writing-entry img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.writing-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.writing-text h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.writing-text p {
+  line-height: 1.6;
+}
+
+.right-image {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .writing-entry,
+  .right-image {
+    flex-direction: column;
+  }
+
+  .writing-entry img {
+    width: 100%;
+  }
+
+  .writing-text {
+    max-width: 100%;
+  }
+}
