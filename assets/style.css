@@ -268,3 +268,45 @@ table th {
   flex: 1;
   min-width: 250px;
 }
+
+.writing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.writing-card {
+  background: #fefefe;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.writing-card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #222;
+}
+
+.writing-card .date {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.3rem 0 1rem;
+}
+
+.writing-card p {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.writing-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.writing-link:hover {
+  text-decoration: underline;
+}
